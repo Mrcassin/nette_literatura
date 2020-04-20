@@ -1,0 +1,19 @@
+{block content}
+    <h5 class="text-center">{$item->author}</h5>
+    <h2 id="nzvk" class="text-center p-2">{$item->title|upper}</h2>
+
+<p class="text-secondary">{$item->anotation}</p>
+<hr>
+<p class="text-center">Literární druh: {$item->category|upper} | Rok vzniku: {$item->year}</p>
+<p class="text-center">Hodnocení: {$item->stars}*</p> 
+
+<p><a n:href="list">Zpět na úvodní stránku</a></p>
+{/block}
+
+{block scripts}
+{include parent}
+{/block}
+
+
+{block head}
+{/block}
